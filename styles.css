@@ -1,0 +1,62 @@
+body {
+    background-color: #333;
+    color: #EEE;
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+
+p {
+    background-color: rgb(207 232 220);
+    border: 2px solid rgb(79 185 227);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+} 
+
+ul {
+    list-style-type: none;
+    }
+
+li {
+    display: inline-block;
+    width: 100px;
+}
+
+a {
+    color: #EEE;
+    text-decoration: none;
+}
+
+
+.positioned {
+    background: rgb(255 84 104 / 30%);
+    border: 2px solid rgb(255 84 104);
+    color: #EEE;
+}
+
+.relative {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.absolute {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.fixed {
+    position: fixed;
+    top: 300px;
+    left: 300px;
+}
