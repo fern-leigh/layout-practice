@@ -20,6 +20,8 @@ nav {
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: #333;
+    width: 100%;
 } 
 
 ul {
@@ -29,11 +31,30 @@ ul {
 li {
     display: inline-block;
     width: 100px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 20%;
+    margin-left: 1rem;
+}
+
+li:hover {
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+}
+
+.active-link {
+    border-bottom: 3px solid #b7deb5;
+    border-right: 3px solid #b7deb5;
 }
 
 a {
     color: #EEE;
     text-decoration: none;
+}
+
+.buffer {
+    height: 10vh;
 }
 
 
