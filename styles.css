@@ -60,3 +60,8 @@ a {
     top: 300px;
     left: 300px;
 }
+
+.sticky {
+    position: sticky;
+    top: 30px;
+}
