@@ -5,15 +5,10 @@ class Nav extends HTMLElement {
 
 
     connectedCallback() {
+        // isolate substring of path from URL (gets everything after final `/`)
         const currentUrl = window.location.href;
-        console.log(currentUrl);
-
-        const curentPathArr = currentUrl.split("/");
-        const currentPath = curentPathArr[curentPathArr.length - 1]
-
-        console.log(currentPath);
-
-
+        const Arr = currentUrl.split("/");
+        const currentPath = Arr[Arr.length - 1]
 
 
         this.innerHTML = `
@@ -38,6 +33,7 @@ class Nav extends HTMLElement {
     </nav>
     `;
 
+    // Add class 'active-link' to nav item based on current path 
         switch (currentPath) {
             case 'index.html': document.getElementById("index-link").classList.add("active-link");
                 break;
@@ -49,7 +45,7 @@ class Nav extends HTMLElement {
                 break;
             case 'sticky.html': document.getElementById("sticky-link").classList.add("active-link");
                 break;
-            default: console.log("switch works but path wrong")
+            default: console.log("uunable to identify path")
         }
     }
 }
