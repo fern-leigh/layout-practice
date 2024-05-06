@@ -45,7 +45,7 @@ class Nav extends HTMLElement {
                 break;
             case 'sticky.html': document.getElementById("sticky-link").classList.add("active-link");
                 break;
-            default: console.log("uunable to identify path")
+            default: document.getElementById("index-link").classList.add("active-link");
         }
     }
 }
