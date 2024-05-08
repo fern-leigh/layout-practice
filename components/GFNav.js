@@ -1,4 +1,4 @@
-class Nav extends HTMLElement {
+class GFNav extends HTMLElement {
     constructor() {
         super();
     }
@@ -12,27 +12,18 @@ class Nav extends HTMLElement {
 
 
         this.innerHTML = `
-    <nav>
+    <nav class="gf-nav">
         <ul>
-            <li id="index-link" class="">
-                <a href="index.html">Default</a>
+            <li id="grid-index-link" class="">
+                <a href="./grid-index.html">Explore CSS Grid</a>
             </li>
-            <li id="relative-link" class="">
-                <a href="./relative.html">Relative</a>
-            </li>
-            <li id="absolute-link" class="">
-                <a href="./absolute.html">Absolute</a>
-            </li>
-            <li id="fixed-link" class="">
-                <a href="./fixed.html">Fixed</a>
-            </li>
-            <li id="sticky-link" class="">
-                <a href="sticky.html">Sticky</a>
+            <li id="flex-index-link" class="">
+                <a href="./flex-index.html">Explore Flexbox</a>
             </li>
         </ul>
         <div>
             <ul>
-                <a href="./gf-index.html"><li>Go to Grid/Flex</li></a>
+                <a href="./index.html"><li id="b2b-link">Back to basic layouts</li></a>
             </ul> 
         </div>
     </nav>
@@ -50,9 +41,9 @@ class Nav extends HTMLElement {
                 break;
             case 'sticky.html': document.getElementById("sticky-link").classList.add("active-link");
                 break;
-            default: document.getElementById("index-link").classList.add("active-link");
+            default: document.getElementById("b2b-link").classList.add("active-link");
         }
     }
 }
 
-customElements.define('nav-component', Nav);
+customElements.define('gf-nav-component', GFNav);
